@@ -1,0 +1,101 @@
+body {
+    background-color: #808080;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: #EBF5EE;
+    }
+}
+
+a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color:hotpink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+#navbar {
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #542344;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+#welcome-section {
+    text-align: center;
+    color: #542344;
+    background-color: #BFD1E5;
+    height: 100vh;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: inset;
+    border-radius: 10px;
+    border-width: 15px;
+    border-color: rgb(29, 117, 146);
+    margin-top: 80px;
+}
+
+#projects {
+    margin-top: 50px;
+    background-color: #D8BFAA;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 30px;
+    border-style: ridge;
+    border-color: chocolate;
+    border-width: 10px;
+}
+
+.welcome-header {
+    padding-top: 30vh;
+    font-size: 5vh;
+}
+
+.welcome-description {
+    padding-top: 10vh;
+    font-size: 3vh;
+}
+
+.project-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.project-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-style: double;
+    border-width: 10px;
+    border-radius: 20px;
+}
