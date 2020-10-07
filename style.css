@@ -31,12 +31,12 @@ a:active {
 
 nav li {
     display: inline-block;
-    padding-left: 50px;
-    font-size: 30px;
+    padding-left: 3vh;
+    font-size: 4.5vh;
 }
 
 #navbar {
-    padding-right: 50px;
+    padding-right: 1vh;
     display: flex;
     justify-content: flex-end;
     background-color: #542344;
@@ -44,6 +44,7 @@ nav li {
     top: 0;
     right: 0;
     width: 100%;
+    height: 8%;
 }
 
 #welcome-section {
