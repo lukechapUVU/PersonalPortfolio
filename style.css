@@ -55,11 +55,6 @@ nav li {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border-style: inset;
-    border-radius: 10px;
-    border-width: 15px;
-    border-color: rgb(29, 117, 146);
-    margin-top: 80px;
 }
 
 #projects {
@@ -77,6 +72,10 @@ nav li {
 
 #description {
     margin: 100px 30px 50px 30px;
+}
+
+#profile-link {
+    font-style: italic;
 }
 
 .welcome-header {
@@ -99,11 +98,11 @@ nav li {
     padding-bottom: 10px;
 }
 
-.project-pic {
+.project-tile {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 70%;
     border-style: double;
     border-width: 10px;
     border-radius: 20px;
