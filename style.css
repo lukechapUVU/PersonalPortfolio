@@ -75,9 +75,18 @@ nav li {
     border-width: 10px;
 }
 
+#description {
+    margin: 100px 30px 50px 30px;
+}
+
 .welcome-header {
     padding-top: 30vh;
     font-size: 5vh;
+}
+
+.name {
+    font-style: italic;
+    font-size: 7vh;
 }
 
 .welcome-description {
@@ -98,4 +107,17 @@ nav li {
     border-style: double;
     border-width: 10px;
     border-radius: 20px;
+}
+
+.description-header {
+    font-weight: 200;
+    font-style: oblique;
+    font-variant: small-caps;
+    color: chocolate;
+}
+
+.description-paragraph {
+    text-indent: 50px;
+    color:#d3a680;
+    font-family: "Lucida Console";
 }
