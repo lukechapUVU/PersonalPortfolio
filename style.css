@@ -66,6 +66,7 @@ nav li {
     margin-right: auto;
     display: block;
     padding-top: 30px;
+    padding-bottom: 30px;
     border-style: ridge;
     border-color: chocolate;
     border-width: 10px;
@@ -97,6 +98,8 @@ nav li {
 .project-title {
     text-align: center;
     padding-bottom: 10px;
+    color: #542344;
+    font-size: 30px;
 }
 
 .project-tile {
@@ -107,6 +110,7 @@ nav li {
     border-style: double;
     border-width: 10px;
     border-radius: 20px;
+    padding-bottom: 20px;
 }
 
 .description-header {
