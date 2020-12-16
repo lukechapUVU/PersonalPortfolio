@@ -2,61 +2,91 @@
 <html>
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio Webpage</title>
-    <nav id="navbar">
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">Welcome</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#description">Description</a>
-            </li>
-        </ul>
-    </nav>
-    <section id="welcome-section">
-        <h1 class="welcome-header">My name is <span class="name">Luke Chapman</span></h1>
-        <h4 class="welcome-description">and I love to code</h4>
-    </section>
-    <section id="projects">
-        <a href="file:///C:/Users/lchap/DGM%201600%20Git/TechnologyInterest/index.html">
-           <img class="project-tile" src="technology-interest-page.PNG"></img>
-        </a>
-        <p class="project-title">My Technology Interest Page</p>
-        <br>
-        <a href="file:///C:/Users/lchap/DGM%201600%20Git/star-wars-api/index.html">
-            <img style="padding-bottom:0px" class="project-tile" src="star-wars-poster.jpg"></img>
-        </a>
-        <p class="project-title">Star Wars API Practice</p>
-        <br>
-    </section>
-    <section id="description">
-        <h2 class="description-header">Here's how you fill a paragraph with random text</h2>
-        <p class="description-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Morbi venenatis enim quis varius placerat. 
-            Integer varius ligula felis, ut malesuada lacus ornare ac. 
-            Suspendisse consectetur orci in luctus aliquet. 
-            Nam nunc dolor, pretium id cursus nec, mollis sed lacus. 
-            Nulla nec ipsum risus. 
-            Aliquam quis tortor vitae eros tristique aliquam at in sapien. 
-            Donec nec turpis iaculis, vehicula nibh porttitor, luctus turpis. 
-            Proin aliquet venenatis tellus. 
-            Nam semper imperdiet luctus. 
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-            Vivamus pretium vel dolor vel mattis.
-        </p>
-        <p class="description-paragraph">
-            In hac habitasse platea dictumst. 
-            Curabitur imperdiet leo blandit elit dictum congue. 
-            Proin sit amet fermentum turpis. 
-            Duis sed placerat diam, ac hendrerit dui. 
-            Praesent feugiat maximus nulla, at ultricies diam dignissim vitae. 
-            Mauris sollicitudin nisi eget erat varius sodales. 
-            Cras quis quam ac tortor tristique euismod. 
-            Aliquam in rutrum lectus. 
-            Nulla tincidunt leo eu ipsum convallis, vel facilisis dui sollicitudin.
-        </p>
-    </section>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <body onload="giveInstructions(0)">
+            <section id="welcome">
+                <h1 class="welcome-header">My name is <span class="name">Luke Chapman</span></h1>
+                <h4 class="welcome-description" onclick="giveInstructions(1)">and I love to code</h4>
+            </section>
+            <section id="projects">
+                <a href="https://codepen.io/lchap/project/full/ZQzRGG" target="_blank">
+                <img class="project-tile" src="technology-interest-page.PNG"></img>
+                </a>
+                <p class="project-title">My Technology Interest Page</p>
+                <br>
+                <a href="https://silly-snyder-df9bca.netlify.app/" target="_blank">
+                    <img style="padding-bottom:0px" class="project-tile" src="star-wars-poster.jpg"></img>
+                </a>
+                <p class="project-title">Star Wars API Practice</p>
+                <br>
+            </section>
+            <section id="description">
+                <h2 class="description-header">Here's how you fill a paragraph with random text</h2>
+                <p class="description-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur <a class="hidden-lipsum" onclick="foundHiddenLipsum('adipiscing')">adipiscing</a> elit. 
+                    Morbi venenatis enim quis varius placerat. 
+                    <a class="hidden-lipsum" onclick="foundHiddenLipsum('Integer')">Integer</a> varius ligula felis, ut malesuada lacus ornare ac. 
+                    Suspendisse consectetur orci in luctus aliquet. 
+                    Nam nunc dolor, pretium <a class="hidden-lipsum" onclick="foundHiddenLipsum('id')">id</a> cursus nec, mollis sed lacus. 
+                    Nulla nec ipsum risus. 
+                    Aliquam quis tortor vitae eros tristique aliquam at in sapien. 
+                    Donec nec turpis iaculis, vehicula <a class="hidden-lipsum" onclick="foundHiddenLipsum('nibh')">nibh</a> porttitor, luctus turpis. 
+                    Proin aliquet venenatis tellus. 
+                    Nam semper imperdiet luctus. 
+                    Class aptent taciti sociosqu <a class="hidden-lipsum" onclick="foundHiddenLipsum('ad')">ad</a> litora torquent per conubia nostra, per inceptos himenaeos. 
+                    Vivamus pretium vel dolor vel mattis.
+                </p>
+                <p class="description-paragraph">
+                    In hac habitasse platea dictumst. 
+                    Curabitur imperdiet leo <a class="hidden-lipsum" onclick="foundHiddenLipsum('blandit')">blandit</a> elit dictum congue. 
+                    Proin sit amet fermentum turpis. 
+                    Duis sed placerat diam, ac hendrerit dui. 
+                    Praesent feugiat <a class="hidden-lipsum" onclick="foundHiddenLipsum('maximus')">maximus</a> nulla, at ultricies diam dignissim vitae. 
+                    Mauris sollicitudin nisi eget erat varius sodales. 
+                    Cras quis quam ac tortor tristique euismod. 
+                    Aliquam in <a class="hidden-lipsum" onclick="foundHiddenLipsum('rutrum')">rutrum</a> lectus. 
+                    Nulla tincidunt leo <a class="hidden-lipsum" onclick="foundHiddenLipsum('eu')">eu</a> ipsum convallis<a class="hidden-lipsum" onclick="foundHiddenLipsum(',')">,</a> vel facilisis dui sollicitudin.
+                </p>
+            </section>
+            <h2 class="states-header">States</h2>
+            <h4 class="states-description">Click on a box to view more information about the state</h4>
+            <selection id="states">
+                
+            </selection>
+        </body>
+    </main>
+    <script src="script.js" type="module"></script>
+    <script>
+        const noRepeat = false;
+        const clueArr = ['adipiscing', 'Integer', 'id', 'nibh', 'ad', 'blandit', 'maximus', 'rutrum', 'eu', ',']
+        function foundHiddenLipsum(clue) {
+            if(clueArr.includes(clue)) {
+                let clueIndex = clueArr.indexOf(clue);
+                clueArr.splice(clueIndex, 1);
+                if(clueArr.length == 0) {
+                    alert('Congrats, you have completed the word search! Please continue to enjoy the site!')
+                }
+                else {
+                    alert('You found one! Keep going. You have ' + clueArr.length + ' left.');
+                }
+            }
+            else {
+                alert('Hmm... It appears you had already found that word. This means there are still ' + clueArr.length + ' left');
+            }
+        }
+        function giveInstructions(step) {
+            if(step == 0) {
+                alert('Welcome to the page! I will be sending alerts like this to let you know about the hidden features of this page.');
+                alert('The first feature will reveal itself if you mouse over the "and I love to code" header text. Click the text for the next instructions.');
+            }
+            if(step == 1 && noRepeat == false) {
+                alert('Awesome, you have found the first hidden feature of this page!');
+                alert('The next feature can be found when you click on the state box from the state I grew up in. \(Hint: It is that state that is know for its corn\)');
+                noRepeat = true;
+            }
+        }
+    </script>
 </html>
